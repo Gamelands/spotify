@@ -54,7 +54,7 @@ public class spotifyUtils {
     		}
     	}
 
-    	Iterator<Integer> iterator = pos.iterator(); //"if i can't let it go out of my mind fuck jerk"
+    	Iterator<Integer> iterator = pos.iterator();
     	List<String> finalStr = new LinkedList<String>();
 		int beg = 0;
 		int end = iterator.next();
