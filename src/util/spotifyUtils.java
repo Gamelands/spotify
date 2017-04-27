@@ -22,6 +22,23 @@ import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 
 public class spotifyUtils {
 	
+	public String Sniffer() throws ParseException
+	{	
+      	Scanner scanner = new Scanner(System.in);
+    	System.out.print("Enter some lyrics: ");
+    	String lyrics = scanner.nextLine();
+    	//String lyrics = "if i can't let it go out of my mind";
+    	lyrics = lyrics.replaceAll("[^A-Za-z0-9 ]", "");
+    	scanner.close();
+    	
+    	if (lyrics.length() == 0)
+    	{
+    		System.out.println("Please enter in valid lyrics - TERMINATING PROGRAM");
+			System.exit(0);
+		}
+		return lyrics;
+	}
+	
 	public List<String> PhraseFinder(String lyrics) throws ParseException
 	{
     	String[] tagWords = new String[] {"CC","IN", "NN", "VB"}; //common conjunction or prepositions
