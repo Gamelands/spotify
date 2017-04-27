@@ -7,7 +7,7 @@ Command Line Arguments
 
 Example:  java -jar spotify.jar
 
-Use will be prompted to enter in some sing lyrics
+User will be prompted to enter in some song lyrics
 
 Enter some lyrics:
 
@@ -26,5 +26,4 @@ https://open.spotify.com/track/7m4HUtdXRUHEitLIqbVWxf
 
 All dependencies have been packed into spotify.jar file, you can run from command line either Windows or Linux.
 
-
-Program uses Stanfords Parts of Speech tagger to identify the most common used 
+Program uses Stanfords Parts of Speech tagger to identify the most commonly used conjunction or prepositions that are starting words for phrases/clause and finds sequential combinations of at least 3 words between the next conjunction or prepositions
