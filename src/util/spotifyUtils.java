@@ -109,6 +109,11 @@ public class spotifyUtils {
 				}
 			}
 		}
+		
+		if (finalStr.size() == 0)
+		{
+			finalStr.add(lyrics);
+		}
 		return finalStr;
 	}
 	
