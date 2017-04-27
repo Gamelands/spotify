@@ -31,8 +31,6 @@ public class spotifyUtils {
     		tags.add(tagWords[i]);
     	}
     	
-  
-    	
     	MaxentTagger tagger = new MaxentTagger("C:/Users/xilin/Google Drive/SQUANT/INFO/CODE/JARFILES/javaJars/stanford-postagger-full-2016-10-31/models/english-left3words-distsim.tagger");
 
     	String tagged = tagger.tagString(lyrics);
@@ -94,16 +92,11 @@ public class spotifyUtils {
 				}
 			}
 		}
-		
-		
 		return finalStr;
 	}
 	
 	public void PlayList(List<String> finalStr) throws ParseException, IOException
-	{
-		
-    	//finalStr = searcher.PhraseFinder(lyrics);
-    	
+	{	
 		//spotify api search request
 		System.out.println("Your Play List is Below:");
 		List<String> PlayList = new LinkedList<String>();
@@ -115,6 +108,7 @@ public class spotifyUtils {
 			String theURL = "https://api.spotify.com/v1/search?q=" + query + "&type=track&limit=1";
 			URL wikiRequest = new URL(theURL);
 			 
+			@SuppressWarnings("resource")
 			Scanner scannerUrl = new Scanner(wikiRequest.openStream());
 			String response = scannerUrl.useDelimiter("\\Z").next();
 
@@ -148,8 +142,7 @@ public class spotifyUtils {
 				System.out.println("Sorry but the following lyrics dont exist: " + query);
 			}
 		}
-			//return sentiment;
-       }
+	}
      
 }
 

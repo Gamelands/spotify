@@ -27,3 +27,8 @@ https://open.spotify.com/track/7m4HUtdXRUHEitLIqbVWxf
 All dependencies have been packed into spotify.jar file, you can run from command line either Windows or Linux.
 
 Program uses Stanfords Parts of Speech tagger to identify the most commonly used conjunction or prepositions that are starting words for phrases/clause and finds sequential combinations of at least 3 words between the next conjunction or prepositions
+
+If you will compile the code, requirements are below:
+gson-2.6.2.jar
+stanford-corenlp-3.7.0.jar
+stanford-posttagger.jar
