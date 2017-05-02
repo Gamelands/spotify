@@ -32,3 +32,6 @@ If you will compile the code, requirements are below:
 gson-2.6.2.jar
 stanford-corenlp-3.7.0.jar
 stanford-posttagger.jar
+google-collections-10.jar
+
+Also, this program uses the Stanford "english-left3words-distsim.tagger" POS tagger model file.  If you will use a runnable jar file from the command line, you need to change (line 53 in spotifyUtils.java) the "posFile" path to point to where the POS tagger model file resides.  You can download: https://nlp.stanford.edu/software/tagger.shtml
