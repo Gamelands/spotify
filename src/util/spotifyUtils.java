@@ -118,7 +118,7 @@ public class spotifyUtils {
 			String query = String.join("+",splitTemp);
 			String theURL = "https://api.spotify.com/v1/search?q=%22" + query + "%22&type=track&limit=1";
 			URL wikiRequest = new URL(theURL);
-			System.out.println(theURL);
+			//System.out.println(theURL);//validate URL
 			@SuppressWarnings("resource")
 			Scanner scannerUrl = new Scanner(wikiRequest.openStream());
 			String response = scannerUrl.useDelimiter("\\Z").next();
