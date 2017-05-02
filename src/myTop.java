@@ -18,4 +18,3 @@ public class myTop {
     	searcher.PlayList(searcher.PhraseFinder(lyrics));
     }
 }
-
