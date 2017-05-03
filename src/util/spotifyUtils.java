@@ -72,7 +72,7 @@ public class spotifyUtils {
 			while(iterator.hasNext())
 			{
 				if(tempS.size() >= 3)
-				{;
+				{
 					if(tags.contains(iterator.peek()) == true)
 					{
 						finalStr.add(String.join(" ",tempS));
