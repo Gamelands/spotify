@@ -83,11 +83,19 @@ public class spotifyUtils {
 				iterator.next();
 				i++;
 			}
-			if (tempS.size() != 0)
+			if (tempS.isEmpty() == false)
 			{
-				String backFill = String.join(" ",finalStr.get(finalStr.size()-1)) + " ";
-				backFill = backFill.concat(String.join(" ",tempS));
-				finalStr.set(finalStr.size()-1, backFill);
+				if (finalStr.isEmpty() == false)
+				{
+					String backFill = String.join(" ",finalStr.get(finalStr.size()-1)) + " ";
+					backFill = backFill.concat(String.join(" ",tempS));
+					finalStr.set(finalStr.size()-1, backFill);
+				}
+				else
+				{
+					String backFill = String.join(" ",tempS);
+					finalStr.add(backFill);
+				}
 			}
 		}
 		else
